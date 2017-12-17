@@ -1,0 +1,23 @@
+#sidebar {  
+  margin-top: 12em;
+  ul {
+    li {
+      list-style: none;
+      transform: scale(1);
+      transition: 0.6s;
+      margin: 2em 0.5em 0 -1.8em;
+
+      &:hover {
+        cursor: pointer;
+        //transform: scale(1.5);
+        transition: 0.6s;
+      }
+    }
+  }
+}
+
+.sideBarBtn {
+  border-radius: 50%;
+  background: $orange;
+  box-shadow: 5px 5px 5px black;
+}

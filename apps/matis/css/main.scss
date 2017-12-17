@@ -1,0 +1,503 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Open+Sans');
+
+// COLORS
+$purple: #812990;
+$dark-purple: darken($purple, 10%);
+$light-purple: lighten($purple, 10%);
+$dark-gray: #333134;
+$mid-gray: #4a4a4a;
+$light-gray: #c2c2c2;
+$lighter-gray: #f2f2f2;
+// FONTS
+$mont-font: 'Montserrat', sans-serif;
+$pop-font: "Poppins", sans-serif;
+$prim-font: "Open Sans", sans-serif;
+// GLOBAL
+* {
+  padding: 0;
+  margin: 0;
+  font-family: $prim-font;
+  font-weight: 400;
+}
+input::-webkit-input-placeholder {
+  color: $light-gray;
+  font-family: $pop-font;
+  padding-left: 10px;
+}
+li {
+  list-style: none;
+}
+// HEADER
+header {
+  // TOP-BAR : social icons and search box
+  .top-bar {
+    background-color: $dark-gray;
+    color:  $light-gray;
+
+    .social-icons {
+      ul li {
+        display: inline-block;
+        margin-right: 15px;
+        margin-top: 15px;
+      }
+    }
+
+    .search {
+      input {
+        height: 45px;
+        width: 98%;
+        margin-top: 5px;
+        border: none;
+        background-color: $mid-gray;
+      }
+
+      span {
+        margin-top: 15px;
+        margin-left: -30px;
+      }
+    }
+  }
+  // LOGO-BAR: matis grp img and customer benefits
+  .logo-bar {
+    img {
+      width: 100%;
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+
+    ul {
+      width: 100%;
+      margin-top: 40px;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        width: 32%;
+        vertical-align: middle;
+        margin-top: 40px;
+        
+        h3 {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-transform: uppercase;
+          font-family: $pop-font;
+          margin-bottom: 0 !important;
+        }
+
+        p {
+          font-size: 0.8em;
+          font-family: $pop-font;
+          white-space: nowrap;
+          overflow: hidden;
+          margin-right: 5px;
+        }
+
+        i {
+          border: 1px solid $light-gray;
+          padding: 3px;
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+  // Main Navigation bar: naslovna, gde kupiti....
+  #nav-bar {
+    height: 50px;
+    background-color: $lighter-gray;
+
+    ul {
+      text-align: center;
+      width: 100%;
+
+      li {
+        display: inline-block;
+        padding-right: 15px;
+        padding-top: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $purple;
+      text-transform: uppercase;
+      font-family: $mont-font;
+      font-size: 1em;
+      padding-top: 17px;
+      padding-bottom: 14px;
+
+      &:hover {
+        background-color: darken($lighter-gray, 3%);
+        color: $light-purple;
+      }
+    }
+  }
+  // Navigation collapse: Proizvodi collapse
+  #nav-collapse {
+    height: 50px;
+    background-color: $purple;
+    text-align: center;
+    width: 100%;
+
+    button {
+      font-style: $mont-font;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.2em;
+      width: 40%;
+      height: 50px;
+      background-color: $purple;
+      border: none;
+      outline: none;
+      color: white;
+
+      span {
+        margin-left: 150px;
+      }
+    }
+
+    button:hover {
+      background-color: $dark-purple;
+      cursor: pointer;
+    }
+  }
+}
+
+// SLIDER #1: Spavace sobe, Rustik, Online kupovina
+.carousel-inner {
+  .carousel-item {   
+    .img-text {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+
+      h1 {
+        color: #fff;
+        font-family: $mont-font;
+        text-transform: uppercase;
+        font-size: 4em;
+        text-shadow: 2px 2px 10px #000;
+      }
+
+      h2 {
+        color: #fff;
+        font-family: $mont-font;
+        text-transform: uppercase;
+        font-size: 2.6em;
+        text-shadow: 2px 2px 10px #000;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        background-color: $purple;
+        padding: 10px 20px 10px 20px;
+        border: none;
+        border-radius: 0;
+
+        &:hover {
+          background-color: $light-purple;
+        }
+      }
+    }
+  }
+}
+// SEPARATOR: matis, matis mebl...
+.separator {
+  background-color: $dark-gray;
+  .col-md-3, .col-sm-6 {
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 15px 25px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+// PONUDA: ugaona garn., lezaj samp...
+.ponuda {
+  .col-md-4 {
+    border: 1px solid $light-gray;
+    max-width: 30%;
+    margin: 100px 10px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 40%;
+    }
+
+    h3 {
+      font-family: $mont-font;
+      text-transform: uppercase;
+      font-size: 1.3em;
+      height: 20%;
+      color: darken($light-gray, 20%);
+    }
+
+    h5 {
+      color: darken($light-gray, 20%);
+      text-decoration: line-through;
+      font-size: 0.8em;
+    }
+
+    h4 {
+      color: $dark-gray;
+      font-size: 1.1em;
+    }
+
+    a {
+      font-family: $prim-font;
+      font-size: 0.9em;
+      background-color: $light-gray;
+      border-radius: 0;
+      border: none;
+      width: 100%;
+
+      &:hover {
+        background-color: darken($light-gray, 20%);
+      }
+    }
+  }
+}
+// SEPARATOR #2: otkrijte prednosti mat...
+.separator-2 {
+  background-color: $purple;
+  color: #fff;
+  
+  .container {
+    text-align: center;
+
+    h2 {
+      font-family: $mont-font;
+      font-size: 2.1em;
+      padding: 70px 20px;
+
+      &:hover {
+        color: $light-gray;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// KATALOG
+.katalog {
+  border: 1px solid $light-gray;
+  margin: 70px 20px 0px 20px;
+  text-align: center;
+
+  h1, h3 {
+    width: 95%;
+    background-color: $dark-gray;
+    color: $lighter-gray;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 10px 0;
+    margin: 20px auto;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+}
+
+.katalog-2 {
+  border: 1px solid $light-gray;
+  margin: 20px 20px 80px 20px;
+  text-align: center;
+
+  img {
+    width: 98.5%;
+    margin: 20px auto;
+  }
+
+  h3 {
+    width: 95%;
+    background-color: $dark-gray;
+    color: $lighter-gray;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 10px 0;
+    margin: 20px auto;
+  }
+
+  p {
+    text-align: left;
+    width: 95%;
+    margin: 20px auto;
+    padding-bottom: 50px;
+  }
+}
+
+// PARTNERI
+.partneri {
+  background-color: $lighter-gray;
+  padding-bottom: 80px;
+
+  h2 {
+    text-transform: uppercase;
+    color: $dark-gray;
+    font-family: $mont-font;
+    font-size: 1.5em;
+    padding: 50px 0px;
+  }
+
+  img {
+    border: 1px solid $light-gray;
+    height: 100%;
+    width: 100%;
+  }
+}
+// DIVIDERS
+.divider-gray {
+  height: 50px;
+  background-color: $light-gray;
+}
+.divider-dark {
+  height: 50px;
+  background-color: $dark-gray;
+}
+// NATUZZI
+.natuzzi {
+  background-image: url("/img/natuzzi-slide.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+
+  img {
+    height: 120px;
+    border: 10px solid #fff;
+    position: relative;
+    top: 57%;
+    left: 65%;
+  }
+
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: $purple;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    top: 57%;
+    right: 32.5%;
+
+    &:hover {
+      background-color: $light-purple;
+    }
+  }
+}
+// KONTAKT
+.kontakt {
+  width:100%;
+  background-color: $dark-gray;
+  color: $light-gray;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h4 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  h5 {
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: $lighter-gray;
+  }
+
+  ul {
+    li {
+      color: $light-gray;
+      margin-bottom: 5px;
+      i {
+        margin-right: 20px;
+      }
+    }
+  }
+  #prvi {
+    li:first-child {
+      padding-bottom: 20px;
+    }
+
+    li:last-child {
+      padding-top: 30px;
+    }
+  }
+
+  #onama {
+    li {
+      list-style-type: circle !important; 
+      list-style-position: inside !important;
+
+      &:hover {
+        cursor: pointer;
+        color: $lighter-gray;
+      }
+    }
+  }
+
+  .forma {
+    border: 1px solid $light-gray;
+    background-color: lighten($dark-gray, 5%);
+    margin-bottom: 30px;
+
+    input {
+      width: 97.2%;
+      border: 1px solid $light-gray;
+      padding: 5px 15px;
+      margin: 10px;
+      background-color: $dark-gray;
+      color: $light-gray;
+
+    }
+
+    button {
+      border: none;
+      padding: 5px 15px;
+      margin: 10px;
+    }
+
+    span {
+      position: relative;
+      bottom: 10%;
+      font-size: 0.8em;
+      margin-top: 20px;
+      padding-left: 10px;
+    }
+  }
+}
+// FOOTER
+.footer {
+  background-color: lighten($dark-gray, 5%);
+  color: $light-gray;
+  font-size: 0.8em;
+  text-align: center;
+
+  p {
+    padding: 20px;
+  }
+
+  ul {
+
+    li {
+      display: inline;
+      margin: 15px;
+    }
+  }
+}

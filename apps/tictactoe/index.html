@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>TicTacToe Game</title>
+</head>
+<body>
+  <div class="container center-text">
+    <h1>Tic Tac Toe</h1>
+    <hr>
+    <h3>CHOOSE</h3>
+    <br>
+    <button id="chooseX">X</button><button id="chooseO">O</button>
+    <br>
+    <button id="reset">RESET</button>
+    <table>
+      <tr>
+        <td id="t1"></td>
+        <td id="t2"></td>
+        <td id="t3"></td>
+      </tr>
+      <tr>
+        <td id="t4"></td>
+        <td id="t5"></td>
+        <td id="t6"></td>
+      </tr>
+      <tr>
+        <td id="t7"></td>
+        <td id="t8"></td>
+        <td id="t9"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="container" id="aiturn">
+    <p>AI'S TURN</p>
+  </div>
+  <div class="container" id="userturn">
+    <p>PLAYER'S TURN</p>
+  </div>
+  <div class="container-fluid" id="gameover">
+    <p>GAME OVER!</p>
+  </div>
+  <div id="credit">
+    <h4>&copy; 2018 by Nikola Bojanović</h4>
+    <ul class="list-inline text-center">    
+      <li class="list-inline-item"><a href="https://www.facebook.com/nikola.bojanovic.39" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+      <li class="list-inline-item"><a href="https://www.linkedin.com/in/nikola-bojanovic-972407152/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+      <li class="list-inline-item"><a href="https://github.com/NicolasBG87" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+      <li class="list-inline-item"><a href="https://www.freecodecamp.org/nicolasbg87" target="_blank"><i class="fa fa-free-code-camp fa-2x" aria-hidden="true"></i></a></li>
+      <li class="list-inline-item"><a href="https://nicolasbg87.github.io/" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

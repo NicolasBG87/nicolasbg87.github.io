@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Movie Quiz</title>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- CSS -->
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="container text-center" id="movieQuiz">
+      <h1>Movie Quiz</h1>
+      <div class="container">
+        <form action="submit" id="quizForm">
+          <p id="movieQuote">Quote from a movie will be presented, and you should guess the movie it was from. PRESS START TO BEGIN!</p>
+          <input type="text" placeholder="Which movie is this line from?" id="quizAnswer"><br>
+          <input type="button" value="Submit Answer" id="quizSubmit">
+        </form>
+      </div>
+
+      <div class="container text-center">
+        <span id="quizProgress">0</span><span> of 10</span>
+      </div>
+
+      <div class="container">
+        <button id="quizStart" class="pull-left">Start</button>
+        <button id="quizReset" class="pull-left" onclick="quizReset()">Reset</button>
+        <span class="pull-right hide" id="quizCorrect"><i class="fa fa-check-circle" aria-hidden="true"></i> Correct!</span>
+        <span class="pull-right hide" id="quizWrong"><i class="fa fa-times-circle" aria-hidden="true"></i> Wrong!</span>
+      </div>
+
+    </div>
+    
+    <div id="credit">
+    <h4>&copy; 2018 by Nikola Bojanović</h4>
+      <ul class="list-inline text-center">    
+        <li class="list-inline-item"><a href="https://www.facebook.com/nikola.bojanovic.39" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/nikola-bojanovic-972407152/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+        <li class="list-inline-item"><a href="https://github.com/NicolasBG87" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.freecodecamp.org/nicolasbg87" target="_blank"><i class="fa fa-free-code-camp fa-2x" aria-hidden="true"></i></a></li>
+        <li class="list-inline-item"><a href="https://nicolasbg87.github.io/" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="quiz.js"></script>
+  </body>
+</html>

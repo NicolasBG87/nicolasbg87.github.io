@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <!-- STYLE -->
+  <link rel="stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+
+  <title>Nikola Bojanovic</title>
+</head>
+<body>
+  <!-- ***** BACKGROUND VIDEO ***** -->
+  <video autoplay muted id="myVideo">
+    <source src="vid/bg-vid.mp4" type="video/mp4">
+  </video>
+  <!-- ***** HEADER ***** -->
+  <header>
+    <div class="row">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+        <span id="contactBtn" class="pull-left"><i class="fa fa-address-book fa-2x" aria-hidden="true"></i></span>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+        <span class="pull-right" id="time"></span>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <h1>Nikola Bojanović</h1>
+      </div>
+    </div>
+    <!-- ***** NAVIGATION MENU ***** -->
+    <ul>
+      <li><i id="homeBtn" class="fa fa-home fa-2x footerBtn active" aria-hidden="true"></i></li>
+      <li><i id="aboutBtn" class="fa fa-user-circle-o fa-2x footerBtn" aria-hidden="true"></i></li>
+      <li><i id="educationBtn" class="fa fa-graduation-cap fa-2x footerBtn" aria-hidden="true"></i></li>
+      <li><i id="workBtn" class="fa fa-briefcase fa-2x footerBtn" aria-hidden="true"></i></li>
+    </ul>
+  </header>
+  <!-- ***** CONTACTS CONTAINER ***** -->
+  <div class="animated bounceInLeft hide" id="contact">
+    <ul>
+      <li>Milojice Nikolica 14</li>
+      <li>Ivanjica, RS</li>
+      <li>+381 (61) 18 255 85</li>
+      <li>+381 (32) 40 10 70</li>
+      <li>nikolabojanovicmob@gmail.com</li>
+    </ul>
+    <!-- ***** SOCIAL MEDIA BUTTONS ***** -->
+    <ul class="list-inline text-left">
+      <li class="list-inline-item"><a href="https://www.facebook.com/nikola.bojanovic.39" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li class="list-inline-item"><a href="https://www.linkedin.com/in/nikola-bojanovic-972407152/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li class="list-inline-item"><a href="https://github.com/NicolasBG87" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      <li class="list-inline-item"><a href="https://www.freecodecamp.org/nicolasbg87" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <!-- ***** MAIN WRAPPER ***** -->
+  <div class="container" id="main">
+    <div id="typed-strings">
+        <p>Hello, welcome to my site.</p>
+        <p>I create <strong>Websites.</strong></p>
+        <p>I create <strong>Landing pages.</strong></p>
+        <p>I create <strong>Blogs.</strong></p>
+        <p>I create <strong>Web Apps.</strong></p>
+        <p>I create <strong>Solutions for your business!</strong></p>
+        <p>I'm available for <strong>hire.</strong></p>
+        <p>Contact information is in the <strong>upper-left corner.</strong></p>
+    </div>
+    <span id="typed"></span>
+    <!-- ***** ABOUT CONTAINER ***** -->
+    <div class="section animated zoomIn hide" id="about">
+      <h1>About Me</h1>
+      <p>Even though i'm not a graphic designer, i understand the <span>trends</span> and am able to take a wireframe and build a product from it. I'm applying <span>industry best practices</span> to my code to make it <span>clean, scalable and reusable.</span></p>
+      <p>Commenting all changes and supplying the client with a <span>full documentation</span> is part of my routine. I'm using <span>Timely and Toggl</span> to keep track of my activity. I value clients' <span>time</span> and respect deadlines.</p>
+      <p>I'm organising my work using <span>Trello</span> , as i belive it's very important to keep assignments under control. I think that good communication is extremely important, so i check <span>Slack, Instagram, Facebook, Skype and email</span> several times a day.</p>
+      <p>I'm a <span>friendly</span> person that goes well with others. I'd be thrilled to join your team and give my contribution to your projects.</p>
+    </div>
+    <!-- ***** SKILLS CONTAINER ***** -->
+    <div class="section animated zoomIn hide" id="education">
+      <h1>Skills</h1>
+      <p>Whether i'm working on a one page app, a blog or a large website, i always lean towards scalability. I support object oriented programming and test driven devolpment. I'm also familiar with agile & scrum concepts.</p>
+      <div class="edBox text-center hide" id="edGeneral">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <img src="images/html5.png" alt="html5">
+            <h4>HTML 5</h4>
+            <p>Understand the structure and ways to optimise the code for speed, readability and SEO.</p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <img src="images/css3.png" alt="css3">
+            <h4>CSS 3</h4>
+            <p>Comfortable using Bootstrap, Foundation and Materialize. I'm also familiar with Sass and it's modular architecture.</p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <img src="images/javascript.png" alt="javascript">
+            <h4>JavaScript</h4>
+            <p>I belive in strong vanilla Javascript foundation before any frameworks/libraries, but am equally efficient writing in jQuery where necessary.</p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <img src="images/angular.png" alt="angular">
+            <h4>Angular.JS</h4>
+            <p>Coming soon...</p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <img src="images/node.png" alt="node">
+            <h4>Node.JS</h4>
+            <p>Coming soon...</p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <img src="images/mongo.png" alt="mongo">
+            <h4>MongoDB</h4>
+            <p>Coming soon...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** WORK CONTAINER ***** -->
+    <div class="section animated zoomIn hide" id="work">
+      <h1>My Work</h1>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="images/calc-app.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">JavaScript Calculator</h4>
+              <p class="card-text">Simple calculator, part of FreeCodeCamp curriculum.</p>
+              <a href="apps/calculator/calculator.html" target="_blank" class="btn btn-warning">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="images/bookmarks-app.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Bookmarks App</h4>
+              <p class="card-text">Save your favorite sites, using local storage.</p>
+              <a href="apps/bookmarks/bookmarks.html" target="_blank" class="btn btn-warning">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="images/pomodoro-app.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Productivity Timer</h4>
+              <p class="card-text">"Pomodoro" timer, part of FreeCodeCamp curriculum.</p>
+              <a href="apps/pomodoro/pomodoro.html" class="btn btn-warning">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="images/quiz-app.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Movie Quiz</h4>
+              <p class="card-text">Quiz that saves your score. Leaderboard soon!</p>
+              <a href="apps/quiz/quiz.html" class="btn btn-warning">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="images/simon-game-app.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Simon Game</h4>
+              <p class="card-text">Guess the color game. JavaScript AI.</p>
+              <a href="apps/simongame/index.html" class="btn btn-warning">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="images/tictactoe-app.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">X & O Game</h4>
+              <p class="card-text">JavaScript AI (pretty dumb at the moment :D)</p>
+              <a href="apps/tictactoe/index.html" class="btn btn-warning">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="images/matis.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Matis Clone</h4>
+              <p class="card-text">Practice project. Clone of Matis company site.</p>
+              <a href="apps/matis/index.html" class="btn btn-warning">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="images/wikipedia.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Wikipedia Viewer</h4>
+              <p class="card-text">Wikipedia API service app. Practice project.</p>
+              <a href="apps/wikipedia/index.html" class="btn btn-warning">Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="script/typed.js"></script>
+  <script src="script/main.js"></script>
+</body>
+</html>
