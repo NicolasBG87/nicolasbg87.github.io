@@ -1,0 +1,13 @@
+/// /// Table of Contents //////////////////////////////////
+/// // # Hiding class to remove elements ///////////////////
+/// // # Active class for navigation icons bottom border ///
+/// ////////////////////////////////////////////////////////
+
+.hide {
+  display: none;
+}
+
+.active {
+  border-bottom: 2px solid red;
+  padding: 10px;
+}

@@ -1,0 +1,28 @@
+#credit {
+  margin-top: 15em;
+}
+
+#credit h4 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+ul li{
+  transform: scale(1);
+  transition: 0.5s;
+  margin: 0 1em;
+}
+
+ul li:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+ul li a {
+  color: #000;
+}
+
+ul li a:hover {
+  color: #000;
+}
