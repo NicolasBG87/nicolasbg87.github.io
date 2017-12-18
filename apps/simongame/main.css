@@ -102,3 +102,34 @@ p {
   margin-top: 20px;
   font-size: 2em;
 }
+
+#credit {
+  margin-top: 5em;
+  text-align: center;
+}
+
+#credit h4 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+ul li{
+  transform: scale(1);
+  transition: 0.5s;
+  margin: 0 1em;
+  display: inline;
+}
+
+ul li:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li a:hover {
+  color: white;
+}
