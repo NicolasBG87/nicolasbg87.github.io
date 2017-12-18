@@ -83,15 +83,6 @@
 
 #typed {
   font-size: 4em;
-<<<<<<< HEAD
-  font-family: $primary-font;
-  color: $orange;
-  text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;  
-=======
   font-weight: 800;
   font-family: $primary-font;
   color: $orange;
@@ -100,17 +91,12 @@
   1px -1px 0 $orange-dark,
   -1px 1px 0 $orange-dark,
   1px 1px 0 $orange-dark;
->>>>>>> master
 }
 
 .typed-cursor{
   font-size: 4em;
   font-family: $primary-font;
-<<<<<<< HEAD
-  color: $orange;
-=======
   color: $orange-dark;
->>>>>>> master
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
