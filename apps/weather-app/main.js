@@ -46,7 +46,7 @@ if (navigator.geolocation) {
     lon = position.coords.longitude;
     lat = position.coords.latitude;
 
-    $.getJSON("http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&APPID=855180ee76bd1d1f44838c7a4a9bf1f3&units=metric",function(data){
+    $.getJSON("https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&APPID=855180ee76bd1d1f44838c7a4a9bf1f3&units=metric",function(data){
 
       let day0temp = Math.round(data.list[0].main.temp);
       let day0min = Math.floor(data.list[2].main.temp_min);
