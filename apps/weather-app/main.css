@@ -61,3 +61,26 @@ span {
 #forecast h3 {
   font-weight: 700;
 }
+
+.desc, #weatherState {
+  color: orange;
+}
+
+#credit {
+  margin-top: 50px;
+}
+
+#credit ul li {
+  transform: scale(1);
+  transition: 0.5s;
+  padding: 10px;
+}
+
+#credit ul li:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+#credit ul li a {
+  color: white;
+}
