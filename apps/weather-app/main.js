@@ -11,11 +11,11 @@ $(document).ready(function(){
   function clock(){
     let amPm = "";
 
-    if (hours <= 12){
-      amPm = "AM";
-    } else if (hours > 12) {
+    if (hours > 12){
       hours -= 12;
       amPm = "PM";
+    } else if (hours <= 12) {
+      amPm = "AM";
     }
     // Update #time li with value
     if (minutes < 10){
