@@ -28,10 +28,26 @@ $(document).ready(function(){
 
   function getDays(){
     $("#day0").html("Today");
-    $("#day1").text(days[day+1]);
-    $("#day2").text(days[day+2]);
-    $("#day3").text(days[day+3]);
-    $("#day4").text(days[day+4]);
+    if ((day+1) > 7){
+      $("#day1").text(days[(day+1)-7]);
+    } else {
+      $("#day1").text(days[day+1]);
+    }
+    if ((day+2) > 7){
+      $("#day2").text(days[(day+2)-7]);
+    } else {
+      $("#day2").text(days[day+2]);
+    }
+    if ((day+3) > 7){
+      $("#day3").text(days[(day+3)-7]);
+    } else {
+      $("#day3").text(days[day+3]);
+    }
+    if ((day+4) > 7){
+      $("#day4").text(days[(day+4)-7]);
+    } else {
+      $("#day4").text(days[day+4]);
+    }
   }
   getDays();
   setInterval(getDays, 600000);
