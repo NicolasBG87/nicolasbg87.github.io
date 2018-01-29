@@ -1,11 +1,12 @@
 $(document).ready(function(){
-
+  // Clock in the top right corner
   function clock(){
+    // Store date variables
     let date = new Date();
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let amPm = "";
-
+    // Proper use of AM/PM
     if (hours < 12){
       amPm = "AM";
     } else
@@ -19,7 +20,7 @@ $(document).ready(function(){
   // Run the clock function every second to update html with real-time data
   setInterval(clock, 1000);
 
-
+  // Button on click events
   $("#contactBtn").on("click", function (){
     $("#contact").toggleClass("hide");
   });
@@ -54,13 +55,12 @@ $(document).ready(function(){
     $(".section").addClass("hide");
     $("#work").removeClass("hide");
   });
-
+  // "Auto typing" settings
   var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
     typeSpeed: 40,
     startDelay: 8500,
     backSpeed: 30,
     backDelay: 700,
-
   });
 });
