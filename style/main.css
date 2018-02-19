@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes");
-@import url("https://fonts.googleapis.com/css?family=Cinzel");
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 header {
   text-align: center;
@@ -39,7 +37,7 @@ header ul li:hover {
 }
 
 header span {
-  font-family: "Cinzel", serif;
+  font-family: "Roboto", sans-serif;
   color: #a95009;
   font-size: 1.2em !important;
   transform: scale(1);
@@ -72,7 +70,7 @@ header span:hover {
 
 #contact {
   color: #fbd4b6;
-  font-family: "Amatic SC", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 2.1em;
   text-shadow: 10px 10px 10px black;
   position: absolute;
@@ -119,7 +117,7 @@ header span:hover {
 
 #main .section {
   color: #fbd4b6;
-  font-family: "Cinzel", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   width: 100% !important;
   height: auto !important;
@@ -128,6 +126,7 @@ header span:hover {
   border-radius: 20px;
   padding: 20px;
   margin-top: 2em !important;
+  text-transform: uppercase;
 }
 
 #main .section .card {
