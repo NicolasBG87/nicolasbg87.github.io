@@ -1,0 +1,33 @@
+@mixin bg-img-with-gradient($img) {
+  background-image: linear-gradient(to right bottom, 
+    rgba($color-primary, 0.9), 
+    rgba($color-secondary, 0.9)),
+    url($img);
+  background-position: top;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative;
+}
+
+@mixin text-gradient {
+  background-image: linear-gradient(to right, $color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@mixin card-gradient-front {
+  background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+}
+
+@mixin card-gradient-back {
+  background-image: linear-gradient(to right bottom, $color-secondary, $color-primary);
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

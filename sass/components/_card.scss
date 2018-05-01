@@ -1,0 +1,152 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    height: 50rem;
+    width: 100%;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(black, .2);
+
+    &--front {
+      background-image: linear-gradient(to bottom right ,$color-secondary, rgba($color-secondary, .3));
+      color: $text-light;
+    }
+
+    &--back {
+      @include card-gradient-back;
+      transform: rotateY(180deg);
+      color: $text-light;
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    background-position: top center;
+    height: 23rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    
+    &--1 {
+      background-image: url("../assets/images/mama-mia.png");
+    }
+
+    &--2 {
+      background-image: url("../assets/images/react-quiz.png");
+    }
+
+    &--3 {
+      background-image: url("../assets/images/template-agency.jpg");
+    }
+
+    &--4 {
+      background-image: url("../assets/images/template-security.jpg");
+    }
+
+    &--5 {
+      background-image: url("../assets/images/template-conference.jpg");
+    }
+
+    &--6 {
+      background-image: url("../assets/images/template-fashion.jpg");
+    }
+
+    &--7 {
+      background-image: url("../assets/images/template-blog.jpg");
+    }
+
+    &--8 {
+      background-image: url("../assets/images/matis.jpg");
+    }
+
+    &--9 {
+      background-image: url("../assets/images/route.png");
+    }
+
+    &--10 {
+      background-image: url("../assets/images/nearby.png");
+    }
+
+    &--11 {
+      background-image: url("../assets/images/pomodoro-app.png");
+    }
+
+    &--12 {
+      background-image: url("../assets/images/calc-app.png");
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    color: $text-light;
+    position: absolute;
+    top: 18rem;
+    right: 2rem;
+    background-color: rgba($color-primary, .85);
+    padding: 1rem 1.5rem;
+  }
+
+  &__details {
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 2rem auto;
+      
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $text-light;
+        }
+      }
+    }
+  }
+
+  &__cta {
+
+    i {
+      font-size: 7rem;
+      display: block;
+      margin: 15rem 0 3rem 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 3rem;
+      color: $text-light;
+      font-weight: 100;
+      background: none;
+      border: 1px solid $text-light;
+      border-radius: 10rem;
+      padding: 1rem 2rem;
+
+      &:hover {
+        background: $text-light;
+        color: $color-primary;
+      }
+    }
+  }
+}

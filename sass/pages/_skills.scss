@@ -1,0 +1,49 @@
+.skills {
+  height: 100vh;
+  @include bg-img-with-gradient("../../assets/images/bg-portfolio.jpg");
+  clip-path: inherit;
+  transform: skewY(-7deg);
+  margin-top: -20rem;
+  text-align: center;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  .heading-large {
+    display: inline-block;
+    font-size: $heading-medium;
+    text-transform: uppercase;
+    color: $text-light;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+    margin: 7rem 0;
+
+    &:hover {
+      transform: skewY(10deg) scale(1.1);
+      text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .2);
+    }
+  }
+
+  .card-transparent {
+    background: rgba(black, .5);
+    border: none;
+    border-radius: 3px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+    transition: all .2s;
+
+    &:hover {
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, .5);
+    }
+
+    h2 {
+      text-transform: uppercase;
+      margin: 1rem 0;
+    }
+
+    i {
+      font-size: 5rem;
+    }
+  }
+}

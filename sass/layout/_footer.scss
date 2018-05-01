@@ -1,0 +1,48 @@
+.contact {
+  background-color: rgba(black, 0.8);
+  text-align: center;
+  padding: 3rem 0 5rem 0;
+
+  img {
+    height: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-weight: 100;
+    font-size: $text-large;
+    letter-spacing: 1.5px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 2rem auto;
+
+    li {
+      display: inline-block;
+      transition: all .5s;
+      margin: 0 1rem;
+
+      &:hover {
+        transform: rotate(-20deg) scale(1.05) translateY(-.25rem);
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.8);
+      }
+
+      a {
+        text-decoration: none;
+        color: $text-light;
+
+        i {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  .divider {
+    height: 1px;
+    width: 60%;
+    background-color: $text-light;
+    margin: 2rem auto;
+  }
+}

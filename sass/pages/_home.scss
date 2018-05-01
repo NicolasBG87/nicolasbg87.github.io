@@ -1,0 +1,87 @@
+.about {
+  background-color: $text-light;
+  padding: 17rem 15rem 40rem 15rem;
+  margin-top: -15rem;
+  text-align: center;
+  color: $text-dark;
+
+  .heading-small {
+    display: inline-block;
+    font-size: $heading-medium;
+    text-transform: uppercase;
+    @include text-gradient;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+    margin-bottom: 10rem;
+
+    &:hover {
+      transform: skewY(2deg) scale(1.1);
+      text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .2);
+    }
+  }
+
+  .icons-box {
+    margin-top: -5rem;
+    position: relative;
+    font-size: $heading-large;
+    height: 30rem;
+
+    [class^="devicon-"] {
+      border: 3px solid $color-secondary;
+      border-radius: 50%;
+      padding: 2.5rem;
+      background: #fff;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+      transition: all .2;
+
+      &:hover {
+        transform: rotate(-30deg) scale(1.1) translateY(-1rem);
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, .4);
+        z-index: 10;
+      }
+    }
+    
+    .devicon-css3-plain {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+    }
+
+    .devicon-github-plain {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+    }
+
+    .devicon-html5-plain {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+    }
+
+    .devicon-sass-original {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+    }
+
+    .devicon-javascript-plain {
+      position: absolute;
+      top: 50%;
+      left: 80%;
+    }
+
+    .devicon-react-original {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      z-index: 1;
+    }
+
+    .devicon-webpack-plain {
+      position: absolute;
+      top: 20%;
+      left: 80%;
+    }
+  }
+}

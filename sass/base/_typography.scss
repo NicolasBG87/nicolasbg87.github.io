@@ -1,0 +1,14 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: $text-light;
+  font-size: 1.6rem;
+}
+
+.text-p {
+  text-align: left;
+  font-size: $text-large;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
