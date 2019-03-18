@@ -43,12 +43,12 @@
 
   &__list {
     position: absolute;
-    width: 100%;
+    width: 30rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
-    text-align: center;
+    text-align: left;
   }
 
   &__item {
