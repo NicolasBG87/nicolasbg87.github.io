@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "https://nicolasbg87.github.io/",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,6 @@
   "author": "Nikola Bojanovic",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^2.0.1"
   }
 }
