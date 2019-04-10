@@ -228,8 +228,8 @@ body {
 .card__side {
   height: 50rem;
   width: 100%;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -274,51 +274,39 @@ body {
 }
 
 .card__picture--1 {
-  background-image: url("../assets/images/mama-mia.png");
-}
-
-.card__picture--2 {
-  background-image: url("../assets/images/react-quiz.png");
-}
-
-.card__picture--3 {
-  background-image: url("../assets/images/template-agency.jpg");
-}
-
-.card__picture--4 {
-  background-image: url("../assets/images/template-security.jpg");
-}
-
-.card__picture--5 {
-  background-image: url("../assets/images/template-conference.jpg");
-}
-
-.card__picture--6 {
   background-image: url("../assets/images/template-fashion.jpg");
 }
 
-.card__picture--7 {
-  background-image: url("../assets/images/template-blog.jpg");
+.card__picture--2 {
+  background-image: url("../assets/images/template-conference.jpg");
 }
 
-.card__picture--8 {
-  background-image: url("../assets/images/matis.jpg");
+.card__picture--3 {
+  background-image: url("../assets/images/template-security.jpg");
 }
 
-.card__picture--9 {
-  background-image: url("../assets/images/route.png");
+.card__picture--4 {
+  background-image: url("../assets/images/template-agency.jpg");
 }
 
-.card__picture--10 {
-  background-image: url("../assets/images/nearby.png");
+.card__picture--5 {
+  background-image: url("../assets/images/mama-mia.png");
 }
 
-.card__picture--11 {
+.card__picture--6 {
   background-image: url("../assets/images/pomodoro-app.png");
 }
 
-.card__picture--12 {
-  background-image: url("../assets/images/calc-app.png");
+.card__picture--7 {
+  background-image: url("../assets/images/react-table.png");
+}
+
+.card__picture--8 {
+  background-image: url("../assets/images/react-tabs.png");
+}
+
+.card__picture--9 {
+  background-image: url("../assets/images/shopper.png");
 }
 
 .card__heading {
